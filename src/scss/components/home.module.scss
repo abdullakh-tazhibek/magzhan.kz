@@ -1,0 +1,65 @@
+@import "../variables";
+
+.container {
+  background-color: $background;
+  padding: 24px 52px 64px 52px;
+
+  .grid {
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5px;
+
+    &__item {
+      padding: 24px;
+      background-color: $white;
+      border-radius: 24px;
+    }
+
+    &__item:nth-child(1) {
+      width: 476px;
+      height: 380px;
+    }
+
+    &__item:nth-child(2) {
+      width: 676px;
+      height: 380px;
+    }
+
+    &__item:nth-child(2n + 1) {
+      width: 376px;
+      height: 438px;
+      p {
+        color: $white;
+        margin-top: 234px;
+        border-radius: 24px;
+        background-color: $main;
+        width: max-content;
+        padding: 5px 8px 5px 8px;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+    }
+
+    &__item:nth-child(2n + 2) {
+      width: 376px;
+      height: 370px;
+      p {
+        margin-top: 132px;
+      }
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 16px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+.tag {
+  border-radius: 24px;
+}
