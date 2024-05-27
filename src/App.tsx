@@ -12,7 +12,10 @@ export const App: React.FC = () => {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/https://abdullakh-tazhibek.github.io/magzhan.kz/"
+          element={<Home />}
+        />
       </Routes>
 
       <Footer />
