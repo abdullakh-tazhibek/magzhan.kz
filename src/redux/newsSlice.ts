@@ -36,15 +36,24 @@ const initialState: NewsSliceState = {
   currentPage: 0,
 };
 
+const API_KEY = "4aad02491df642609493fcfdd0d1593a";
+
 export const fetchNews = createAsyncThunk<News[]>(
   "news/fetchNewsStatus",
   async (currentPage) => {
     const { data } = await axios.get<News[]>(
-      `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=API_KEY?page=${currentPage}?limit=${10}`
+      `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${API_KEY}?limit=${10}`
     );
     return data;
   }
 );
+
+export const fetchComments = async (id: string) => {
+  const { data } = await axios.get(
+    `https://jsonplaceholder.typicode.com/comments?postId=${id}`
+  );
+  return data;
+};
 
 export const newsSlice = createSlice({
   name: "news",

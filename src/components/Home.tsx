@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { fetchNews, selectNewsData, setCurrentPage } from "../redux/newsSlice";
 import { useAppDispatch } from "../redux/store";
 import { NewsCard } from "./NewsCard";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Pagination } from "antd";
 import type { PaginationProps } from "antd";
 
@@ -25,9 +25,10 @@ export const Home: React.FC = () => {
 
   const getNews = async () => {
     dispatch(
-      fetchNews({
-        currentPage: String(currentPage),
-      })
+      fetchNews()
+      //   {
+      //   currentPage: String(currentPage),
+      // }
     );
   };
 
