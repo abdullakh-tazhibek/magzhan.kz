@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/magzhan.kz/static/css/main.d968ecf5.css",
+    "main.js": "/magzhan.kz/static/js/main.a3d043c3.js",
+    "index.html": "/magzhan.kz/index.html",
+    "main.d968ecf5.css.map": "/magzhan.kz/static/css/main.d968ecf5.css.map",
+    "main.a3d043c3.js.map": "/magzhan.kz/static/js/main.a3d043c3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d968ecf5.css",
+    "static/js/main.a3d043c3.js"
+  ]
+}
