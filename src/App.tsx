@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 
-import { NewsCard } from "./components/NewsCard";
 import { Home } from "./components/Home";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -14,7 +13,6 @@ export const App: React.FC = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path={"/:"} element={<NewsCard />} />
       </Routes>
 
       <Footer />

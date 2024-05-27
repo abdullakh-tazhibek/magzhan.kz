@@ -33,7 +33,7 @@ export interface NewsSliceState {
 const initialState: NewsSliceState = {
   items: [],
   status: Status.LOADING,
-  currentPage: 1,
+  currentPage: 0,
 };
 
 export const fetchNews = createAsyncThunk<News[]>(
