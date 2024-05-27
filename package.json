@@ -1,7 +1,7 @@
 {
+  "homepage": "https://abdullakh-tazhibek.github.io/magzhan.kz/",
   "name": "magzhan.kz",
   "version": "0.1.0",
-  "homepage": "https://abdullakh-tazhibek.github.io/magzhan.kz/",
   "private": false,
   "dependencies": {
     "@material-tailwind/react": "^2.1.9",
